@@ -10,7 +10,7 @@ const ExtractJwt = require('passport-jwt').ExtractJwt;
 const jwt = require('jsonwebtoken');
 
 
-const HTTP_PORT = process.env.PORT || 81;
+const HTTP_PORT = process.env.PORT || 80;
 
 let opts = {};
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
